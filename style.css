@@ -1,0 +1,410 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "游ゴシック",YuGothic,
+    "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",
+    sans-serif;
+}
+.header{
+    display: block;
+    color:orange;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (max-width:1080px){
+    .header{
+        position: fixed;
+        background-color: #fff;
+        z-index: 10;
+    }
+}
+.line1{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    border-radius: 10px;
+    top:0%;
+}
+.line :nth-child(2){
+    top: 50%;
+}
+.line :nth-child(3){
+    top: 100%;
+}
+.line{
+    width: 30px;
+    position: relative;
+    display: none;
+    height: 21px;
+    cursor: pointer;
+}
+@media screen and (max-width:1080px){
+    .line{
+        display: block;
+        height: 21px;
+        width: 30px;
+        position: relative;
+    }
+}
+@media screen and (max-width:1080px){
+    .line1{
+    }
+}
+@media screen and (max-width:1080px){ 
+    .menu{
+        position: fixed;
+        right: 0;
+        top:60px;
+        height: 100%;
+        flex-direction: column;        
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%);
+        background-color: rgba(0, 0, 0, .8);
+    }
+} 
+.header_container{
+    display: flex;
+    position: relative;
+    max-width: 100%;
+    margin: 0px 36px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-between; 
+    align-items: center;
+}
+@media screen and (max-width:767px){
+    .header_container{
+        margin:0 20px;
+        padding: 15px 0;
+    }
+}
+img{
+    margin: 0;
+    padding: 0;
+}
+.potepancamp{
+    display: block;
+    height: 20px;
+    width: auto;
+    text-align: start;
+}
+@media screen and (max-width:767px){
+    .potepancamp{
+        height: 16px;
+    }
+}
+.potepan:hover{
+    opacity: .8;
+}
+.menu{
+
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    display: flex; 
+
+    text-align: center;
+
+}
+.menu>a {
+
+    text-decoration: none;
+    margin-right: 45px;
+
+    color: black;
+}
+.menu>a:hover{
+    opacity: .7;
+}
+.menu span{
+    font-weight: 700;
+    display: block;
+}
+.menu span:nth-child(1) {
+    font-family:"Lato",sans-serif;
+    font-size: 14px;
+}
+.menu span:nth-child(2) {
+    font-size: 10px;
+}
+
+.button{
+    display: inline-flex;
+    margin: 0px 5px;
+    align-items: center;
+    background-color:#f79214;
+    border-radius: 38px;
+    padding: 0 20px;
+    height: 40px;
+    text-align: center;
+}
+.button:hover{
+    opacity: .8;
+}
+.button a{
+    display: flex;
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+
+
+}
+.flex_2{
+    display: flex;
+    align-items: center;
+}
+.backgroundimage_mobile{
+    display: none;
+}
+@media screen and (max-width:767px){
+    .backgroundimage_mobile{
+        display: block;
+        width: 100%;
+    }
+}
+.main{
+    position: relative;
+    height: auto;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+    background-image: url(https://camp.potepan.com/wp-content/themes/potepancamp/assets/images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+@media screen and (max-width:1080px){
+    .main{
+        top: 60px;
+        padding-bottom: 85px;
+    }
+}
+@media screen and (max-width:767px){
+    .main{
+        position: relative;
+        background-image: none;
+        padding-top: 0px;
+        top: 52px;
+        display: block;
+        height: 100%;
+        padding-bottom: 85px;
+    }
+}
+.main_container{
+    max-width: 1140px;
+    position: relative;
+    padding:0 50px;
+    margin: 0 auto;
+}
+@media screen and (max-width:767px){
+    .main_container{
+        margin-top: -45vw;
+
+        padding: 0 20px;
+        position: relative;
+        z-index: 5;
+
+    }
+}
+.flex_main_all{
+    display: block;
+    width:fit-content;
+    justify-content:flex-start;
+    margin-bottom: 70px;
+    flex-direction: column;
+}
+@media screen and (max-width:767px){
+    .flex_main_all{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+.main h2{
+    text-align: center;
+    font-family:"Lato",sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 54px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+@media screen and (max-width:767px){
+    .main h2{
+        font-size: 25px;
+        line-height: 36px;
+    }
+}
+.flex_main{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+@media screen and (max-width:767px){
+    .flex_main{
+        justify-content:space-between;
+    }
+}
+.flex_main >img{
+    margin-right: 8px;
+
+
+}
+.flex_main >img:nth-child(2){
+    width: 40%;
+}
+.flex_main >img:nth-child(3){
+    margin-right: 0; 
+}
+@media screen and (max-width:767px){
+    .flex_main >img:nth-child(1),.flex_main >img:nth-child(3){
+    width: 27.5%;
+    }
+}
+.button2{
+    background-color: #f79214;
+    text-align: center;
+    border-radius: 38px;
+}
+
+@media screen and (max-width:767px){
+    .button2 {
+        height: 64px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+}
+.button2:hover{
+    opacity: 0.8;
+}
+.button2 a{
+    display: block;
+    padding: 20px 100px;
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width:767px){
+    .button2 a{
+        display: inline;
+        padding: 0;
+    }
+}
+.main_bottom{
+    color: #a2a2a4;
+    text-align: start;
+    margin: 0;
+    font-size: 12px;
+}
+.main_bottom>p{
+    margin: 0;
+}
+.main_bottom a {
+    text-decoration: none;
+    color: #a2a2a4;
+}
+
+.footer{
+    background-color: #f79214;
+    padding: 44px 0;
+    width: 100%;
+    position: relative;
+}
+
+@media screen and (max-width:1024px){
+    .footer_container{
+        flex-direction: column;
+        align-items: center;
+    } 
+}
+
+.footer_container{
+
+    display: flex;
+    color:white;
+    max-width: 1140px;
+    padding: 0 50px;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+}
+@media screen and (max-width:767px){
+    .footer_container{
+        padding: 0 20px;
+    } 
+}
+.flex_item1{
+    display: block;
+    width: 50%;
+}
+.video{
+    width: 50%;
+}
+@media screen and (max-width:1024px){
+    .footer_container video{
+        width: 75%;
+    }
+}
+@media screen and (max-width:767px){
+    .footer_container video{
+        width: 100%;
+    }
+}
+.flex_item2{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 32px;
+    margin-bottom: 0;
+    align-items: flex-start;
+}
+@media screen and (max-width:1024px){
+    .flex_item2{
+        width: 75%;
+        margin-left: 0px;
+    }
+}
+@media screen and (max-width:767px){
+    .flex_item2{
+        width: 100%;
+        margin-left: 0px;
+        padding-top: 16px;
+    }
+}
+.flex_item2>h2{
+    font-size: 35px;
+    font-weight: 900;
+    width: 100%;
+    margin: 0;
+    margin-bottom: 8px;
+    letter-spacing: .1em;
+    line-height: 54px;
+}
+.flex_item2>h2>span {
+    font-family: "Lato",sans-serif;
+}
+
+.flex_item2 p{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 24px;
+    line-height: 26px;
+}
+.footer img{
+    width:158px ;
+    cursor: pointer;
+}
+@media screen and (max-width:1024px){
+    .footer img{
+        margin: 0 auto;
+    }
+}
